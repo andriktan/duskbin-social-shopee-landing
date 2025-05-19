@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,22 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
   }
+}
+
+.gradient-purple {
+  @apply bg-gradient-to-br from-duskbin-purple to-duskbin-deep-purple text-white;
+}
+
+.gradient-cta {
+  @apply bg-gradient-to-r from-duskbin-orange to-duskbin-purple text-white hover:shadow-lg transition-all duration-300;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-duskbin-purple to-duskbin-orange bg-clip-text text-transparent;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
 }
