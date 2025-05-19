@@ -1,5 +1,5 @@
 
-import { TikTok, ShoppingBag } from "lucide-react";
+import { Youtube, ShoppingBag } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <TikTok className="h-5 w-5" />
+                <Youtube className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <ShoppingBag className="h-5 w-5" />

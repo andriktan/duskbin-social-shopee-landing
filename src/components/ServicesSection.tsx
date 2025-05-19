@@ -1,5 +1,4 @@
-
-import { TikTok, ShoppingBag, Video, Users } from "lucide-react";
+import { ShoppingBag, Video, Users, Youtube } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ServicesSection = () => {
@@ -7,7 +6,7 @@ const ServicesSection = () => {
     {
       title: "TikTok Shop Management",
       description: "Full-service TikTok Shop setup, optimization and management for maximum visibility and conversions.",
-      icon: <TikTok className="h-10 w-10 text-duskbin-purple" />,
+      icon: <Youtube className="h-10 w-10 text-duskbin-purple" />,
       bgClass: "bg-gradient-to-br from-purple-50 to-purple-100"
     },
     {

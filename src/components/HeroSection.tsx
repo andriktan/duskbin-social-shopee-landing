@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { TikTok, ShoppingBag } from "lucide-react";
+import { Youtube, ShoppingBag } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -34,7 +34,7 @@ const HeroSection = () => {
             
             <div className="mt-12 flex items-center gap-6">
               <div className="flex items-center">
-                <TikTok className="w-6 h-6 text-black mr-2" />
+                <Youtube className="w-6 h-6 text-black mr-2" />
                 <span className="font-semibold">TikTok Partner</span>
               </div>
               <div className="flex items-center">
