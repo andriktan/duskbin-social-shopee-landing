@@ -45,12 +45,12 @@ const ContactSection = () => {
               <div className="space-y-6">
                 <div>
                   <h4 className="text-white font-medium mb-2">Email Us</h4>
-                  <p className="text-white/90">hello@duskbin.my</p>
+                  <p className="text-white/90">hello@duskbin.com</p>
                 </div>
                 
                 <div>
                   <h4 className="text-white font-medium mb-2">Call Us</h4>
-                  <p className="text-white/90">+60 3 1234 5678</p>
+                  <p className="text-white/90">+6012-3001987</p>
                 </div>
                 
                 <div>
