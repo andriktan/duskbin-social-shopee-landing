@@ -61,7 +61,7 @@ const ServicesSection = () => {
             Trusted by leading brands in Malaysia and beyond
           </p>
           <div className="flex flex-wrap justify-center gap-8 opacity-70">
-            {["Brand 1", "Brand 2", "Brand 3", "Brand 4", "Brand 5"].map((brand, index) => (
+            {["Legendary Perfume", "Kluang TV Coffee", "Epetz"].map((brand, index) => (
               <div key={index} className="flex items-center justify-center h-16">
                 <span className="text-gray-400 font-bold text-xl">{brand}</span>
               </div>
