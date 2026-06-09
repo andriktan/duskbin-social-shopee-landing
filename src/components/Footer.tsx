@@ -49,7 +49,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li>Jalan Tun Razak, KL Eco City</li>
               <li>Kuala Lumpur, Malaysia</li>
-              <li>hello@duskbin.com</li>
+              <li>ash@duskbin.com</li>
               <li>+6012-3001987</li>
             </ul>
           </div>
