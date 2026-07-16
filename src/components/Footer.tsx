@@ -47,10 +47,18 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Jalan Tun Razak, KL Eco City</li>
-              <li>Kuala Lumpur, Malaysia</li>
               <li>ash@duskbin.com</li>
               <li>+6012-3001987</li>
+              <li>
+                <a 
+                  href="https://wa.me/60123001987" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  WhatsApp Us
+                </a>
+              </li>
             </ul>
           </div>
         </div>
