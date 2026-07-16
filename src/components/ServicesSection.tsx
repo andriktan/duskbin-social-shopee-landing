@@ -60,10 +60,19 @@ const ServicesSection = () => {
           <p className="text-lg font-medium mb-6">
             Trusted by leading brands in Malaysia and beyond
           </p>
-          <div className="flex flex-wrap justify-center gap-8 opacity-70">
-            {["Legendary Perfume", "Kluang TV Coffee", "Epetz"].map((brand, index) => (
-              <div key={index} className="flex items-center justify-center h-16">
-                <span className="text-gray-400 font-bold text-xl">{brand}</span>
+          <div className="flex flex-wrap justify-center items-center gap-12">
+            {[
+              { name: "Legendary Perfume", domain: "legendary.com.my" },
+              { name: "Kluang TV Coffee", domain: "kluangcoffee.com.my" },
+              { name: "Epetz", domain: "epetz.my" },
+            ].map((brand, index) => (
+              <div key={index} className="flex items-center justify-center h-20">
+                <img
+                  src={`https://img.logo.dev/${brand.domain}?token=pk_X-1ZO13GSgeOoUrIuJ6GMQ&size=200&format=png`}
+                  alt={`${brand.name} logo`}
+                  className="max-h-16 max-w-[160px] object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  loading="lazy"
+                />
               </div>
             ))}
           </div>
