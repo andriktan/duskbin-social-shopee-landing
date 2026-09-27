@@ -52,7 +52,7 @@ const HeroSection = () => {
                   alt="E-commerce success with Duskbin" 
                   className="w-full h-full object-cover opacity-90 mix-blend-overlay"
                 />
-                <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
+                <div className="absolute inset-0 flex flex-col justify-end p-6 pb-20 sm:pb-6 text-white">
                   <p className="text-xl font-semibold">Trusted by 500+ brands across Malaysia</p>
                 </div>
               </div>
