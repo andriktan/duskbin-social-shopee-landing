@@ -20,9 +20,13 @@ const StrengthsSection = () => {
             <div className="bg-gradient-to-br from-duskbin-purple to-duskbin-deep-purple rounded-2xl p-1">
               <div className="bg-white rounded-xl overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=70" 
                   alt="Affiliate Network" 
                   className="w-full h-auto"
+                  width={800}
+                  height={533}
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -160,9 +164,13 @@ const StrengthsSection = () => {
             <div className="bg-gradient-to-br from-duskbin-orange to-duskbin-purple rounded-2xl p-1">
               <div className="bg-white rounded-xl overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=70" 
                   alt="Live Streaming Setup" 
                   className="w-full h-auto"
+                  width={800}
+                  height={533}
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>

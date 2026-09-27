@@ -9,21 +9,21 @@ const TestimonialsSection = () => {
       name: "Sarah Tan",
       position: "Marketing Director",
       company: "BeautyMalaysia",
-      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3"
+      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&h=100&q=70"
     },
     {
       quote: "The livestreaming hosts were exceptional - they understood our products perfectly and created genuine excitement that converted to sales.",
       name: "Ahmad Zulkifli",
       position: "E-commerce Manager",
       company: "Tech Solutions MY",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3"
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=70"
     },
     {
       quote: "Their Shopee optimization strategy helped us achieve preferred seller status in just 3 months. The ROI has been phenomenal.",
       name: "Ming Wei",
       position: "CEO",
       company: "HomeStyle KL",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3"
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100&q=70"
     }
   ];
 
@@ -62,6 +62,10 @@ const TestimonialsSection = () => {
                         src={testimonial.image} 
                         alt={testimonial.name} 
                         className="w-full h-full object-cover"
+                        width={48}
+                        height={48}
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div>

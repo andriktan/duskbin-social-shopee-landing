@@ -48,9 +48,13 @@ const HeroSection = () => {
             <div className="relative">
               <div className="bg-gradient-to-br from-duskbin-purple/80 to-duskbin-deep-purple rounded-xl shadow-xl overflow-hidden animate-float">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=70" 
                   alt="E-commerce success with Duskbin" 
                   className="w-full h-full object-cover opacity-90 mix-blend-overlay"
+                  width={800}
+                  height={600}
+                  decoding="async"
+                  fetchPriority="high"
                 />
                 <div className="absolute inset-0 flex flex-col justify-end p-6 pb-20 sm:pb-6 text-white">
                   <p className="text-xl font-semibold">Trusted by 500+ brands across Malaysia</p>
