@@ -49,16 +49,23 @@ const ContactSection = () => {
                 </div>
                 
                 <div>
-                  <h4 className="text-white font-medium mb-2">Call or WhatsApp Us</h4>
-                  <p className="text-white/90">+6012-3001987</p>
+                  <h4 className="text-white font-medium mb-2">WhatsApp Us</h4>
                   <a 
-                    href="https://wa.me/60123001987" 
+                    href="https://wa.me/60122973679" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-block mt-2 text-white/90 hover:text-white underline"
+                    className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg transition-colors"
                   >
-                    Chat on WhatsApp
+                    +6012-297 3679
                   </a>
+                </div>
+
+                <div>
+                  <h4 className="text-white font-medium mb-2">Visit Us</h4>
+                  <p className="text-white/90">
+                    57, Jalan SS 21/1a, Damansara Utama,<br />
+                    47400 Petaling Jaya, Selangor
+                  </p>
                 </div>
               </div>
             </div>
