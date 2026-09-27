@@ -82,11 +82,11 @@ const TestimonialsSection = () => {
             Our <span className="text-gradient">Partners</span> & Accreditations
           </h3>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8">
             {partners.map((partner, index) => (
-              <div key={index} className="flex items-center justify-center h-20">
-                <div className="bg-white border border-gray-100 rounded-md shadow-sm px-6 py-4 w-full h-full flex items-center justify-center">
-                  <span className="text-gray-700 font-medium">{partner}</span>
+              <div key={index} className="flex items-center justify-center min-h-20">
+                <div className="bg-white border border-gray-100 rounded-md shadow-sm px-4 py-4 w-full h-full flex items-center justify-center text-center">
+                  <span className="text-gray-700 font-medium text-sm">{partner}</span>
                 </div>
               </div>
             ))}

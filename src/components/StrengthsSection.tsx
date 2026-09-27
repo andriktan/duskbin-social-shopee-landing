@@ -27,7 +27,7 @@ const StrengthsSection = () => {
               </div>
             </div>
             
-            <div className="absolute -bottom-8 -right-8 bg-white rounded-xl shadow-xl p-6 animate-fade-in-up">
+            <div className="absolute -bottom-6 left-4 sm:left-auto sm:-right-8 sm:-bottom-8 bg-white rounded-xl shadow-xl p-5 sm:p-6 animate-fade-in-up">
               <div className="flex items-center gap-4">
                 <div className="bg-duskbin-light-purple/30 rounded-full p-3">
                   <Users className="h-6 w-6 text-duskbin-purple" />
@@ -80,18 +80,18 @@ const StrengthsSection = () => {
             
             <Separator className="my-8" />
 
-            <div className="grid grid-cols-3 gap-4 text-center">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
               <div>
-                <p className="text-3xl font-bold text-duskbin-purple">93%</p>
-                <p className="text-gray-600 text-sm">Conversion Rate</p>
+                <p className="text-2xl md:text-3xl font-bold text-duskbin-purple">93%</p>
+                <p className="text-gray-600 text-xs sm:text-sm">Conversion Rate</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-duskbin-purple">5.2x</p>
-                <p className="text-gray-600 text-sm">Average ROAS</p>
+                <p className="text-2xl md:text-3xl font-bold text-duskbin-purple">5.2x</p>
+                <p className="text-gray-600 text-xs sm:text-sm">Average ROAS</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-duskbin-purple">24hr</p>
-                <p className="text-gray-600 text-sm">Campaign Launch</p>
+                <p className="text-2xl md:text-3xl font-bold text-duskbin-purple">24hr</p>
+                <p className="text-gray-600 text-xs sm:text-sm">Campaign Launch</p>
               </div>
             </div>
           </div>
@@ -140,18 +140,18 @@ const StrengthsSection = () => {
             
             <Separator className="my-8" />
             
-            <div className="grid grid-cols-3 gap-4 text-center">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
               <div>
-                <p className="text-3xl font-bold text-duskbin-purple">45+</p>
-                <p className="text-gray-600 text-sm">Pro Hosts</p>
+                <p className="text-2xl md:text-3xl font-bold text-duskbin-purple">45+</p>
+                <p className="text-gray-600 text-xs sm:text-sm">Pro Hosts</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-duskbin-purple">500K+</p>
-                <p className="text-gray-600 text-sm">Monthly Viewers</p>
+                <p className="text-2xl md:text-3xl font-bold text-duskbin-purple">500K+</p>
+                <p className="text-gray-600 text-xs sm:text-sm">Monthly Viewers</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-duskbin-purple">237%</p>
-                <p className="text-gray-600 text-sm">Sales Increase</p>
+                <p className="text-2xl md:text-3xl font-bold text-duskbin-purple">237%</p>
+                <p className="text-gray-600 text-xs sm:text-sm">Sales Increase</p>
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@ const StrengthsSection = () => {
               </div>
             </div>
             
-            <div className="absolute -bottom-8 -left-8 bg-white rounded-xl shadow-xl p-6 animate-fade-in-up">
+            <div className="absolute -bottom-6 right-4 sm:right-auto sm:-left-8 sm:-bottom-8 bg-white rounded-xl shadow-xl p-5 sm:p-6 animate-fade-in-up">
               <div className="flex items-center gap-4">
                 <div className="bg-orange-100 rounded-full p-3">
                   <Video className="h-6 w-6 text-duskbin-orange" />
