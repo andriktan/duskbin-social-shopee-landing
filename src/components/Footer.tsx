@@ -50,10 +50,10 @@ const Footer = () => {
               <li>ash@duskbin.com</li>
               <li>
                 <a 
-                  href="https://wa.me/60122973679" 
+                  href="https://wa.link/tqmfu5" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
+                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg transition-colors"
                 >
                   WhatsApp: +6012-297 3679
                 </a>

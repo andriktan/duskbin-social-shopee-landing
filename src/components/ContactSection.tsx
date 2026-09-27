@@ -51,7 +51,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="text-white font-medium mb-2">WhatsApp Us</h4>
                   <a 
-                    href="https://wa.me/60122973679" 
+                    href="https://wa.link/tqmfu5" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg transition-colors"
