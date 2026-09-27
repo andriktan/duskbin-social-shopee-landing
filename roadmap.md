@@ -1,4 +1,4 @@
 # Roadmap
 
 - [x] Update footer copyright year to 2026
-- [ ] Mobile optimization pass — audit and fix mobile layout issues across all sections
+- [x] Mobile optimization pass — fixed overflowing floating cards, stat text sizes, partner boxes; verified zero horizontal overflow at 390px
