@@ -71,7 +71,10 @@ const ServicesSection = () => {
                   src={`https://img.logo.dev/${brand.domain}?token=pk_X-1ZO13GSgeOoUrIuJ6GMQ&size=200&format=png`}
                   alt={`${brand.name} logo`}
                   className="max-h-16 max-w-[160px] object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  width={160}
+                  height={64}
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             ))}
