@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -56,7 +57,8 @@ const ContactSection = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg transition-colors"
                   >
-                    +6012-297 3679
+                    <MessageCircle className="h-5 w-5" />
+                    Chat on WhatsApp
                   </a>
                 </div>
 

@@ -1,5 +1,5 @@
 
-import { Youtube, ShoppingBag } from "lucide-react";
+import { Youtube, ShoppingBag, MessageCircle } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Footer = () => {
@@ -55,7 +55,8 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg transition-colors"
                 >
-                  WhatsApp: +6012-297 3679
+                  <MessageCircle className="h-4 w-4" />
+                  WhatsApp
                 </a>
               </li>
               <li>
