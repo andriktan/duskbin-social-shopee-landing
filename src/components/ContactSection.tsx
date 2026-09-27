@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   const { toast } = useToast();
