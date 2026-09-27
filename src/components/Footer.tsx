@@ -71,7 +71,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center pt-8">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2025 Duskbin. All rights reserved.
+            © 2026 Duskbin. All rights reserved.
           </p>
           
           <div className="flex space-x-6">
