@@ -1,124 +1,157 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Duskbin: a broadcast control room at dusk. Night ground, ember for live and action,
+   violet for data, the full dusk gradient only on the horizon line. */
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
+    --background: 233 26% 4%;
+    --foreground: 36 36% 93%;
+    --card: 236 27% 8%;
+    --card-foreground: 36 36% 93%;
+    --popover: 236 27% 8%;
+    --popover-foreground: 36 36% 93%;
+    --primary: 19 100% 59%;
+    --primary-foreground: 233 26% 4%;
+    --secondary: 238 24% 13%;
+    --secondary-foreground: 36 36% 93%;
+    --muted: 238 24% 13%;
+    --muted-foreground: 252 12% 69%;
+    --accent: 238 24% 13%;
+    --accent-foreground: 36 36% 93%;
+    --destructive: 350 100% 62%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 250 40% 92% / 0.1;
+    --input: 250 40% 92% / 0.16;
+    --ring: 19 100% 59%;
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --dusk: linear-gradient(90deg, #3b2350 0%, #7b4a9e 26%, #d0537a 52%, #ff6b2c 76%, #ffc15e 100%);
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-@layer base {
   * {
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    background: #07080c;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   html,
   body {
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family: 'Poppins', sans-serif;
+    @apply bg-night font-sans text-paper antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: rgba(255, 107, 44, 0.35);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid #ff6b2c;
+    outline-offset: 3px;
+    border-radius: 4px;
   }
 }
 
-.gradient-purple {
-  @apply bg-gradient-to-br from-duskbin-purple to-duskbin-deep-purple text-white;
+@layer components {
+  .display {
+    font-family: "Archivo", "Arial Black", system-ui, sans-serif;
+    font-stretch: 125%;
+    font-weight: 850;
+    letter-spacing: -0.01em;
+    line-height: 0.92;
+    text-transform: uppercase;
+  }
+
+  .display-md {
+    font-family: "Archivo", "Arial Black", system-ui, sans-serif;
+    font-stretch: 118%;
+    font-weight: 800;
+    letter-spacing: -0.005em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .readout {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .dusk-line {
+    background: var(--dusk);
+  }
+
+  .dusk-text {
+    background: linear-gradient(90deg, #ffc15e 0%, #ff6b2c 45%, #d0537a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .btn-ember {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-ember px-5 font-semibold text-night transition-colors duration-200 hover:bg-gold;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-white/20 px-5 font-semibold text-paper transition-colors duration-200 hover:border-white/50 hover:bg-white/5;
+  }
+
+  .hud-corner {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-color: rgba(255, 193, 94, 0.85);
+  }
+
+  .grid-faint {
+    background-image: linear-gradient(rgba(236, 230, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(236, 230, 255, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
 }
 
-.gradient-cta {
-  @apply bg-gradient-to-r from-duskbin-orange to-duskbin-purple text-white hover:shadow-lg transition-all duration-300;
+@media (prefers-reduced-motion: reduce) {
+  .motion-safe-only {
+    animation: none !important;
+  }
 }
 
-.text-gradient {
-  @apply bg-gradient-to-r from-duskbin-purple to-duskbin-orange bg-clip-text text-transparent;
-}
-
-.card-hover {
-  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+@keyframes stage-fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
